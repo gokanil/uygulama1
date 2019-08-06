@@ -1,0 +1,18 @@
+﻿<Window x:Class="databaseremovebutton.View.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:databaseremovebutton.View"
+        mc:Ignorable="d"
+        Title="AddWindow" Height="160.623" Width="377.404">
+    <Grid>
+        <Button Command="{Binding AddCommand}" Content="Add Image" HorizontalAlignment="Left" Margin="72,67,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="72,10,0,0" TextWrapping="Wrap" Text="{Binding AddPersonModel.Name}" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="72,38,0,0" TextWrapping="Wrap" Text="{Binding AddPersonModel.Address}" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Name:" HorizontalAlignment="Left" Margin="12,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Address:" HorizontalAlignment="Left" Margin="12,36,0,0" VerticalAlignment="Top"/>
+        <Button Command="{Binding AddCommand}" Content="Add" HorizontalAlignment="Left" Margin="72,92,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
